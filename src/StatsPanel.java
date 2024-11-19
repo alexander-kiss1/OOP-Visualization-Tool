@@ -77,4 +77,10 @@ public class StatsPanel extends JPanel {
         statsModel.addRow(new Object[]{"2019", avg2019});
         statsModel.addRow(new Object[]{"2020", avg2020});
     }
+
+
+    public void update(List<Item> filteredItems) {
+        displayStats(filteredItems); // Recalculate and update the stats
+    }
 }
+
